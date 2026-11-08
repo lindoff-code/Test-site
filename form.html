@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Демо Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Главная</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Вход</a>
+        </li>
+    </nav>
+    <!-- Кнопка-триггер модального окна -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Интересная кнопка которая просит на нее нажать
+</button>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ошибка: 404</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        Данное действие запрещено в вашем регионе
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить изменения</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasLabel">Уведомление</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+  </div>
+  <div class="offcanvas-body">
+    Это системная закладка, вы можете ее не закрыть
+  </div>
+</div>
+<div class="card">
+  <img src="..." class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title">Предложение</h5>
+    <p class="card-text">На следующей картинке вы увидите пароль от кредитной картички Илона Маска</p>
+    <a href="#" class="btn btn-primary">Смотреть ниже</a>
+  </div>
+</div>
+
+<div class="card" aria-hidden="true">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title placeholder-glow">
+      <span class="placeholder col-6"></span>
+    </h5>
+    <p class="card-text placeholder-glow">
+      <span class="placeholder col-7"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-4"></span>
+      <span class="placeholder col-6"></span>
+      <span class="placeholder col-8"></span>
+    </p>
+    <a class="btn btn-primary disabled placeholder col-6"></a>
+  </div>
+</div>
+<div class="container">
+  <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Мы передадим вашу электронную почту всем скам компаниям</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Проверить меня</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+</div> 
+<br>
+<br>
+<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg пример">
+  <option selected>Откройте это меню выбора для выбора системного пользователя</option>
+  <option value="1">ТЫ</option>
+  <option value="2">ЕЩЕ ТЫ</option>
+  <option value="3">АДМИН(УВОЛЕННЫЙ)</option>
+</select>
+
+<select class="form-select form-select-sm" aria-label=".form-select-sm пример">
+  <option selected>НЕ Открывайте это меню выбора</option>
+  <option value="1">Зря</option>
+  <option value="2">Очень зря</option>
+  <option value="3">Очень очень зря</option>
+</select>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Без заработка
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Тоже без заработка
+  </label>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
