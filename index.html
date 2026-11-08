@@ -10,14 +10,14 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="white">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Главная</a>
+    <a class="navbar-brand" href="index.html">Главная</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Вход</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Вход</a>
         </li>
     </nav>
     <!-- Кнопка-триггер модального окна -->
@@ -77,6 +77,51 @@
     </p>
     <a class="btn btn-primary disabled placeholder col-6"></a>
   </div>
+</div>
+<div class="container">
+  <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Мы передадим вашу электронную почту всем скам компаниям</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Проверить меня</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+</div> 
+<br>
+<br>
+<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg пример">
+  <option selected>Откройте это меню выбора для выбора системного пользователя</option>
+  <option value="1">ТЫ</option>
+  <option value="2">ЕЩЕ ТЫ</option>
+  <option value="3">АДМИН(УВОЛЕННЫЙ)</option>
+</select>
+
+<select class="form-select form-select-sm" aria-label=".form-select-sm пример">
+  <option selected>НЕ Открывайте это меню выбора</option>
+  <option value="1">Зря</option>
+  <option value="2">Очень зря</option>
+  <option value="3">Очень очень зря</option>
+</select>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Без заработка
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Тоже без заработка
+  </label>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
